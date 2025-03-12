@@ -30,7 +30,7 @@ Users should be able to:
 
 ![Screenshot](./images/screenshot.png)
 
-- Solution URL: [GitHub](https://your-solution-url.com)
+- Solution URL: [GitHub](https://github.com/FernJBatista/40-E-commerce-product-page)
 - Live Site URL: [Live Site](https://your-live-site-url.com)
 
 ## My process
