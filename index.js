@@ -72,8 +72,8 @@ desktopCarrousel.forEach(image => {
 });
 
 /* Product Quantity */
-const decreaseButton = document.querySelector('.decreaseButton');
-const increaseButton = document.querySelector('.increaseButton');
+const decreaseButton = document.querySelector('#decreaseButton');
+const increaseButton = document.querySelector('#increaseButton');
 const quantityCount = document.querySelector('#quantityCount');
 let quantity = 1;
 quantityCount.innerText = quantity;

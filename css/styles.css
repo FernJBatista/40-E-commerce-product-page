@@ -670,7 +670,7 @@ main #pricing #totalPrice #discount {
 main #productCTA {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   width: 100%;
   gap: 1rem;
@@ -695,7 +695,6 @@ main #productCTA #quantity button {
   justify-content: center;
   width: -moz-max-content;
   width: max-content;
-  padding: 1.5rem;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -710,7 +709,6 @@ main #productCTA #quantity span {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   text-align: center;
   font-size: 1rem;
   font-weight: 700;

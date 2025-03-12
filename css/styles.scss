@@ -713,7 +713,7 @@ main {
     #productCTA {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         justify-content: center;
         width: 100%;
         gap: 1rem;
@@ -736,7 +736,6 @@ main {
                 align-items: center;
                 justify-content: center;
                 width: max-content;
-                padding: 1.5rem;
                 border: none;
                 cursor: pointer;
                 background-color: transparent;
@@ -754,7 +753,6 @@ main {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
                 text-align: center;
                 font-size: 1rem;
                 font-weight: 700
