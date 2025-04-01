@@ -9,7 +9,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
-  - [My process](#my-process)
+  - [My **process**](#my-process)
     - [Built with](#built-with)
   - [Author](#author)
 
@@ -33,7 +33,7 @@ Users should be able to:
 - Solution URL: [GitHub](https://github.com/FernJBatista/40-E-commerce-product-page)
 - Live Site URL: [Live Site](https://fernjbatista.github.io/40-E-commerce-product-page/)
 
-## My process
+## My **process**
 
 ### Built with
 

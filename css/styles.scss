@@ -219,18 +219,26 @@ header {
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        padding: 1.15rem 0;
 
         #menu {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 1.5rem;
-            padding: 1.5rem;
-            width: 100%;
+            gap: 1rem;
+            margin-left: 1.5rem;
+
+            @media screen and (min-width: $desktop-breakpoint) {
+                padding: 1.5rem;
+            }
 
             #logo {
-                height: 1.5rem;
+                height: 1rem;
                 cursor: pointer;
+
+                @media screen and (min-width: $desktop-breakpoint) {
+                    height: 1.5rem;
+                }
             }
 
             #menuButton {
@@ -325,8 +333,35 @@ header {
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            gap: 1.5rem;
-            padding: 1.5rem;
+            gap: 1rem;
+            margin-right: 1.5rem;
+
+            @media screen and (min-width: $tablet-breakpoint) {
+                position: relative;
+            }
+
+            .cartItemAmount {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                top: 1rem;
+                right: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                aspect-ratio: 1/1;
+                width: 1.5rem;
+                background-color: #ff7d1a;
+                border-radius: 100%;
+                font-family: 'Kumbh Sans', sans-serif;
+                font-size: 0.875rem;
+                font-weight: 600;
+
+                &.active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
 
             #cartIcon {
                 height: 1.75rem;
@@ -437,11 +472,13 @@ header {
                         }
                     }
 
-                    p {
+                    .emptyCartMessage {
                         font-size: 1rem;
                         font-weight: 600;
                         color: var(--Dark-grayish-blue);
                         margin: 5rem 8rem;
+                        width: max-content;
+                        text-align: center;
 
                         &.hidden {
                             display: none;
@@ -647,10 +684,10 @@ main {
         justify-content: center;
         width: 100%;
         padding: 0 1.5rem;
-        margin-top: 4rem;
+        margin: 4rem 0;
 
         @media screen and (min-width: $tablet-breakpoint) {
-            margin-top: 2rem;
+            margin: 2rem 0 0 0;
         }
 
         #productInfo {

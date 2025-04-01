@@ -100,6 +100,7 @@ const cartIcon = document.querySelector('#cartIcon');
 const cartContainer = document.querySelector('#cartContainer');
 const emptyCartMessage = document.querySelector('.emptyCartMessage');
 const checkoutButton = document.querySelector('#checkoutButton');
+const cartItemAmount = document.querySelector('.cartItemAmount')
 
 // Toggle cart visibility
 cartIcon.addEventListener('click', () => {
@@ -125,13 +126,19 @@ addToCartButton.addEventListener('click', () => {
         </div>
         `;
 
-        document.createElement('span .cartItemCount').innerText = quantity;
+        cartItemAmount.classList.add('active')
+        cartItemAmount.innerText = quantity;
 
-        // Remove functionality
+        // Remove button functionality
         document.querySelector('.removeItem').addEventListener('click', () => {
-            cartContainer.innerHTML = '';
+            cartContainer.innerHTML = `
+            <p class="emptyCartMessage">Your cart is empty.</p>
+            `;
             checkoutButton.classList.remove('active');
             emptyCartMessage.classList.remove('hidden');
+            cartItemAmount.classList.remove('active')
         });
     }
 });
+
+cartItemNotification();
